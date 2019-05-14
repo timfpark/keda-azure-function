@@ -1,0 +1,14 @@
+image: docker.io/myaccount/mycontainer:mytag
+functions:
+- myfunction 
+secrets:
+  AzureWebJobsStorage: "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=mystorageaccount;AccountKey=dWR7tgY...Aq0w=="
+  FUNCTIONS_WORKER_RUNTIME: node
+triggers:
+- metadata:
+    connection: AzureWebJobsStorage
+    direction: in
+    name: myitem 
+    queueName: myqueue
+    type: queueTrigger
+  type: azure-queue

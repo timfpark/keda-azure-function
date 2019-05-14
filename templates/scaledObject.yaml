@@ -1,0 +1,16 @@
+apiVersion: keda.k8s.io/v1alpha1
+kind: ScaledObject
+metadata:
+  labels:
+    deploymentName: {{ .Release.Name }}
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+spec:
+  cooldownPeriod: null
+  maxReplicaCount: null
+  minReplicaCount: 1
+  pollingInterval: null
+  scaleTargetRef:
+    deploymentName: {{ .Release.Name }}
+  triggers: 
+{{ toYaml .Values.triggers | indent 3 }}

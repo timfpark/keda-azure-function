@@ -1,0 +1,8 @@
+name: keda-azure-function
+description: Deployment chart for a KEDA function app
+version: 0.1.0
+sources:
+- https://github.com/timfpark/keda-azure-function
+maintainers:
+- name: timfpark
+  email: timfpark@gmail.com
