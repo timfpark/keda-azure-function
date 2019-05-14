@@ -1,6 +1,6 @@
 # keda-azure-function
 
-This [Helm](https://helm.sh) chart parameterizes a deployment of an [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/) on [KEDA](https://github.com/kedacore/keda) such that it can be operationalized with a [CI/CD pipeline](https://azure.microsoft.com/en-us/services/devops/) or [GitOps workflow}(https://github.com/microsoft/bedrock).
+This [Helm](https://helm.sh) chart parameterizes a deployment of an [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/) on [KEDA](https://github.com/kedacore/keda) such that it can be operationalized with a [CI/CD pipeline](https://azure.microsoft.com/en-us/services/devops/) or [GitOps workflow](https://github.com/microsoft/bedrock).
 
 ## Usage
 
