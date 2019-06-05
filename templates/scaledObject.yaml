@@ -6,11 +6,7 @@ metadata:
   name: {{ .Release.Name }}
   namespace: {{ .Release.Namespace }}
 spec:
-  cooldownPeriod: null
-  maxReplicaCount: null
-  minReplicaCount: 1
-  pollingInterval: null
   scaleTargetRef:
     deploymentName: {{ .Release.Name }}
-  triggers: 
+  triggers:
 {{ toYaml .Values.triggers | indent 3 }}
